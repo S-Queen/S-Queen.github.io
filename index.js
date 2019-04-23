@@ -13,8 +13,8 @@ window.onload = function () {
             // 测试IE和谷歌浏览器向上和向下滚动wheelDelta输出的属性值是否为120和-120
             if (event.wheelDelta < 0) {//负数向下滚
                 num++;
-                if (num > 4) {
-                    num = 4;
+                if (num > 3) {
+                    num = 3;
                 }
             } else {//正数向上滚
                 num--;

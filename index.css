@@ -38,7 +38,7 @@ html {
 .page:nth-child(3) {
     background: url(images/liuxing.gif) 90% 100% repeat-x black;
 }
-.page:nth-child(3) {
+.page:nth-child(4) {
     background:-webkit-radial-gradient(80% 50%,black,rgb(15, 15, 165));
 }
 .page:nth-child(5) {
@@ -163,7 +163,7 @@ html {
 .page:nth-child(3) .text{
     width: 30%;
     height:55%;
-    margin: 10% 55%;
-    background: url(images/liuxing.gif) center center repeat-x;
+    margin: 7% 10%;
+    background: url(images/shan.jpg) center center repeat-x;
     background-size: 100% 100%;
 }

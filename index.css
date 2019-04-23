@@ -8,6 +8,7 @@ html {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: flex;
 }
 
 #fullpage {
@@ -26,20 +27,13 @@ html {
     overflow: hidden;
     text-align: center;
     font-family: "楷体";
-}
-
-.w {
-    width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
+    color: #fff;
 }
 .page:nth-child(1) {
     background:-webkit-linear-gradient(top,rgb(2, 2, 141),rgb(148, 212, 238) 70%,rgb(97, 97, 97) 98%);
-    color: #fff;
 }
 .page:nth-child(2) {
-    background:url(images/huabian.gif) center center no-repeat black;
+    background:-webkit-radial-gradient(20% 50%,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
 }
 .page:nth-child(3) {
     background:url(images/shan.jpg) center center no-repeat black;
@@ -51,10 +45,10 @@ html {
     background-color: rgb(15, 160, 218);
 }
 .page:nth-child(1) h1{
-    font-size: 80px;
+    font-size: 5em;
     color: white;
     position: relative;
-    top: 200px;
+    top: 15%;
     transition: all 1s ease 0s;
     letter-spacing: 50px;
     opacity: 0;
@@ -66,26 +60,26 @@ html {
 }
 .page:nth-child(1) h1::before,.page:nth-child(1) h1::after{
     content: "";
-    width: 400px;
+    width: 15%;
     height: 5px;
     display: block;
     position: absolute;
-    top: 45px;
+    top: 50%;
     background-color: rgb(231, 231, 231);
     box-shadow:  2px 2px 5px rgb(8, 8, 8);
     transition: all 1.7s ease 0s;
 }
 .page:nth-child(1) h1::before{
-    left: -100px;
+    left: -10%;
 }
 .page:nth-child(1) h1::after{
-    right:-100px;
+    right:-10%;
 }
 .active.page:nth-child(1) h1::before{
-    left: 100px;
+    left: 10%;
 }
 .active.page:nth-child(1) h1::after{
-    right:100px;
+    right:10%;
 }
 .page:nth-child(1) img{
     margin-top:0;
@@ -96,7 +90,7 @@ html {
     transition: all 1.5s ease 0s;
 }
 .active.page:nth-child(1) img{
-    margin-top: 250px;
+    margin-top: 15%;
     opacity: 1;
     transform: rotate(-360deg);
 }
@@ -104,4 +98,62 @@ html {
     margin: 50px 0;
     font-size: 30px;
     color: rgb(0, 0, 0);
+}
+
+
+.page:nth-child(2) .box {
+    width: 20%;
+    height:40%;
+    margin: 15% 15%;
+    position: relative;
+    perspective: 800px;
+}
+
+.page:nth-child(2) .sub div {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 400px;
+    background:url(images/huabian.gif) center center no-repeat;
+    background-size: contain;
+    border-radius: 20%;
+}
+
+.page:nth-child(2) .sub div:nth-child(1) {
+    transform: translateZ(230px);
+}
+
+.page:nth-child(2) .sub div:nth-child(2) {
+    transform: rotateY(-180deg) translateZ(230px);
+}
+
+.page:nth-child(2) .sub div:nth-child(3) {
+    transform: rotateY(-90deg) translateZ(230px);
+}
+
+.page:nth-child(2) .sub div:nth-child(4) {
+    transform: rotateY(90deg) translateZ(230px);
+}
+
+.page:nth-child(2) .sub div:nth-child(5) {
+    transform: rotateX(90deg) translateZ(230px);
+}
+
+.page:nth-child(2) .sub div:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(230px);
+}
+
+.page:nth-child(2) .sub {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 8s linear 0s;
+}
+
+.page:nth-child(2) .box:hover .sub {
+    transform: rotateX(180deg) rotateY(360deg) rotateZ(180deg);
 }

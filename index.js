@@ -90,7 +90,7 @@ window.onload = function () {
             this.height = 400;
             this.spn.style.position = "absolute";
             this.spn.style.top = 0;
-            this.spn.style.left = parseInt(Math.random() * 1910) + "px";
+            this.spn.style.left = parseInt(Math.random() * 1920) + "px";
             this.spn.style.fontSize = parseInt(Math.random() * (25 - 10) + 10);
             this.box.appendChild(this.spn);
             this.spn.innerText = "✲";
@@ -137,4 +137,6 @@ window.onload = function () {
         clearInterval(timer);
         clearInterval(timer1);
     }
+
+
 }

@@ -17,6 +17,10 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-transition:  all 1s;
+    -moz-transition:  all 1s;
+    -ms-transition:  all 1s;
+    -o-transition:  all 1s;
     transition: all 1s;
 }
 
@@ -31,22 +35,35 @@ html {
 }
 .page:nth-child(1) {
     background:-webkit-linear-gradient(top,rgb(2, 2, 141),rgb(148, 212, 238) 70%,rgb(97, 97, 97) 98%);
+    background:-moz-linear-gradient(top,rgb(2, 2, 141),rgb(148, 212, 238) 70%,rgb(97, 97, 97) 98%);
+    background:-ms-linear-gradient(top,rgb(2, 2, 141),rgb(148, 212, 238) 70%,rgb(97, 97, 97) 98%);
+    background:-o-linear-gradient(top,rgb(2, 2, 141),rgb(148, 212, 238) 70%,rgb(97, 97, 97) 98%);
 }
 .page:nth-child(2) {
     background:-webkit-radial-gradient(20% 50%,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
+    background:-moz-radial-gradient(20% 50%,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
+    background:-ms-radial-gradient(20% 50%,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
+    background:-o-radial-gradient(20% 50%,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
 }
 .page:nth-child(3) {
-    background:-webkit-radial-gradient(80% 50%,black,rgb(15, 15, 165));
+    background: url(images/liuxing.gif) 90% 100% repeat-x black;
 }
 .page:nth-child(4) {
-    background: url(images/liuxing.gif) 90% 100% repeat-x black;
+    background:-webkit-radial-gradient(80% 50%,black,rgb(15, 15, 165));
+    background:-moz-radial-gradient(80% 50%,black,rgb(15, 15, 165));
+    background:-ms-radial-gradient(80% 50%,black,rgb(15, 15, 165));
+    background:-o-radial-gradient(80% 50%,black,rgb(15, 15, 165));
 }
 .page:nth-child(1) h1{
     font-size: 5em;
     color: white;
     position: relative;
     top: 15%;
-    transition: all 1s ease 0s;
+    -webkit-transition:  all 1s;
+    -moz-transition:  all 1s;
+    -ms-transition:  all 1s;
+    -o-transition:  all 1s;
+    transition: all 1s;
     letter-spacing: 50px;
     opacity: 0;
     text-shadow:  2px 2px 5px rgb(8, 8, 8);
@@ -64,7 +81,11 @@ html {
     top: 50%;
     background-color: rgb(231, 231, 231);
     box-shadow:  2px 2px 5px rgb(8, 8, 8);
-    transition: all 1.7s ease 0s;
+    -webkit-transition:  all 1.7s;
+    -moz-transition:  all 1.7s;
+    -ms-transition:  all 1.7s;
+    -o-transition:  all 1.7s;
+    transition: all 1.7s;
 }
 .page:nth-child(1) h1::before{
     left: -10%;
@@ -84,17 +105,71 @@ html {
     height: 200px;
     border-radius: 50%;
     opacity: 0;
-    transition: all 1.5s ease 0s;
+    -webkit-transition:  all 1.5s;
+    -moz-transition:  all 1.5s;
+    -ms-transition:  all 1.5s;
+    -o-transition:  all 1.5s;
+    transition: all 1.5s;
+}
+.page:nth-child(1) .img{
+    width: 200px;
+    height: 200px;
+    margin: 300px auto;
+    position: relative;
+}
+.page:nth-child(1) img{
+    margin-top: -200px;
 }
 .active.page:nth-child(1) img{
-    margin-top: 15%;
+    margin-top: 0;
     opacity: 1;
+    -webkit-transform: rotate(-360deg);
+    -moz-tran-webkit-transform: rotate(-360deg);
+    -ms-tran-webkit-transform: rotate(-360deg);
+    -o-tran-webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
 }
-.page:nth-child(1) p{
-    margin: 50px 0;
+.page:nth-child(1) img:hover{
+    -webkit-transform:rotate(360deg);
+    -moz-trans-webkit-transform:rotate(360deg);
+    -ms-trans-webkit-transform:rotate(360deg);
+    -o-trans-webkit-transform:rotate(360deg);
+    transform: rotate(360deg);
+}
+.page:nth-child(1) .img p{
+    width: 200px;
+    height: 200px;
+    word-wrap: break-word;
+    text-align: center;
+    border-radius: 50%;
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    background:-webkit-radial-gradient(center,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
+    background:-moz-radial-gradient(center,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
+    background:-ms-radial-gradient(center,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
+    background:-o-radial-gradient(center,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
+    line-height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition:  all 1s;
+    -moz-transition:  all 1s;
+    -ms-transition:  all 1s;
+    -o-transition:  all 1s;
+    transition: all 1s;
+}
+.page:nth-child(1) .img:hover p{
+    opacity: 1;
+    bottom: -100%;
+}
+.page:nth-child(1) .img:hover p:nth-of-type(3){
+    left: -150%;
+}
+.page:nth-child(1) .img:hover p:nth-of-type(2){
+    left: 150%;
+}
+.page:nth-child(1) .img:hover p:nth-of-type(1){
+    bottom: -150%;
 }
 
 
@@ -103,8 +178,16 @@ html {
     height:40%;
     margin: 15% 15%;
     position: relative;
-    perspective: 800px;
+    /* -webkit-tran-webkit-perspective: 1000px;
+    -moz-tran-webkit-perspective: 1000px;
+    -ms-tran-webkit-perspective: 1000px;
+    -o-tran-webkit-perspective: 1000px; */
+    perspective: 1000px;
     opacity: 0;
+    -webkit-transition:  all 1.5s ease 0.5s;
+    -moz-transition:  all 1.5s ease 0.5s;
+    -ms-transition:  all 1.5s ease 0.5s;
+    -o-transition:  all 1.5s ease 0.5s;
     transition: all 1.5s ease 0.5s;
 }
 .active.page:nth-child(2) .box{
@@ -128,25 +211,49 @@ html {
     margin: 35% auto;
 }
 .page:nth-child(2) .sub div:nth-child(1) {
+    -webkit-transform:translateZ(230px);
+    -moz-tran-webkit-transform:translateZ(230px);
+    -ms-tran-webkit-transform:translateZ(230px);
+    -o-tran-webkit-transform:translateZ(230px);
     transform: translateZ(230px);
 }
 .page:nth-child(2) .sub div:nth-child(2) {
+    -webkit-transform: rotateY(-180deg) translateZ(230px);
+    -moz-transf-webkit-transform: rotateY(-180deg) translateZ(230px);
+    -ms-transf-webkit-transform: rotateY(-180deg) translateZ(230px);
+    -o-transf-webkit-transform: rotateY(-180deg) translateZ(230px);
     transform: rotateY(-180deg) translateZ(230px);
 }
 
 .page:nth-child(2) .sub div:nth-child(3) {
+    -webkit-transform: rotateY(-90deg) translateZ(230px);
+    -moz-transf-webkit-transform: rotateY(-90deg) translateZ(230px);
+    -ms-transf-webkit-transform: rotateY(-90deg) translateZ(230px);
+    -o-transf-webkit-transform: rotateY(-90deg) translateZ(230px);
     transform: rotateY(-90deg) translateZ(230px);
 }
 
 .page:nth-child(2) .sub div:nth-child(4) {
+    -webkit-transform: rotateY(90deg) translateZ(230px);
+    -moz-transf-webkit-transform: rotateY(90deg) translateZ(230px);
+    -ms-transf-webkit-transform: rotateY(90deg) translateZ(230px);
+    -o-transf-webkit-transform: rotateY(90deg) translateZ(230px);
     transform: rotateY(90deg) translateZ(230px);
 }
 
 .page:nth-child(2) .sub div:nth-child(5) {
+    -webkit-transform: rotateX(90deg) translateZ(230px);
+    -moz-transf-webkit-transform: rotateX(90deg) translateZ(230px);
+    -ms-transf-webkit-transform: rotateX(90deg) translateZ(230px);
+    -o-transf-webkit-transform: rotateX(90deg) translateZ(230px);
     transform: rotateX(90deg) translateZ(230px);
 }
 
 .page:nth-child(2) .sub div:nth-child(6) {
+    -webkit-transform: rotateX(-90deg) translateZ(230px);
+    -moz-transf-webkit-transform: rotateX(-90deg) translateZ(230px);
+    -ms-transf-webkit-transform: rotateX(-90deg) translateZ(230px);
+    -o-transf-webkit-transform: rotateX(-90deg) translateZ(230px);
     transform: rotateX(-90deg) translateZ(230px);
 }
 
@@ -154,16 +261,161 @@ html {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: all 8s linear 1s ;
+    -webkit-transition:  all 10s ease 1s;
+    -moz-transition:  all 10s ease 1s;
+    -ms-transition:  all 10s ease 1s;
+    -o-transition:  all 10s ease 1s;
+    transition: all 10s linear 1s ;
 }
 
 .active.page:nth-child(2) .box .sub {
-    transform: rotateX(180deg) rotateY(360deg) rotateZ(180deg);
+    -webkit-transform: rotateX(-720deg) rotateY(270deg) rotateZ(720deg);
+    -moz-transf-webkit-transform: rotateX(-720deg) rotateY(270deg) rotateZ(720deg);
+    -ms-transf-webkit-transform: rotateX(-720deg) rotateY(270deg) rotateZ(720deg);
+    -o-transf-webkit-transform: rotateX(-720deg) rotateY(270deg) rotateZ(720deg);
+    transform: rotateX(720deg) rotateY(270deg) rotateZ(720deg);
 }
-.page:nth-child(4) .text{
+.page:nth-child(2) h1:nth-child(1){
+    position: absolute;
+    top:10%;
+    left: 25%;
+}
+.page:nth-child(2) .content h1{
+    position: absolute;
+    top:-10%;
+    right: 25%;
+}
+.page:nth-child(2) .content{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    right: 150px;
+    top: 15%; 
+    text-align: center;
+}
+.active.page:nth-child(2) .content li{
+    font-size:30px;
+    line-height: 40px;
+    text-shadow:  2px 2px 5px rgb(8, 8, 8);
+    animation: bounceInRight 1s both;
+}
+.page:nth-child(2) .content li:nth-child(2){
+    animation-delay: 0.2s;
+}
+.page:nth-child(2) .content li:nth-child(3){
+    animation-delay: 0.4s;
+}
+.page:nth-child(2) .content li:nth-child(4){
+    animation-delay: 0.6s;
+}
+.page:nth-child(2) .content li:nth-child(5){
+    animation-delay: 0.8s;
+}
+.page:nth-child(2) .content li:nth-child(6){
+    animation-delay: 1s;
+}
+.page:nth-child(2) .content li:nth-child(7){
+    animation-delay: 1.2s;
+}
+.page:nth-child(2) .content li:nth-child(8){
+    animation-delay:1.4s;
+}
+
+.page:nth-child(3) .text{
     width: 30%;
     height:55%;
     margin: 7% 10%;
     background: url(images/shan.jpg) center center repeat-x;
     background-size: 100% 100%;
+}
+
+.page:nth-child(3) .link{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    text-align: left;
+    padding: 50px;
+    overflow: scroll;
+}
+.page:nth-child(3) .link h1{
+    width: 95%;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 0px 2px 5px rgb(216, 216, 216);
+    margin-top: -200px;
+    opacity: 0;
+    -webkit-transition:  all 1s ease 0s;
+    -moz-transition:  all 1s ease 0s;
+    -ms-transition:  all 1s ease 0s;
+    -o-transition:  all 1s ease 0s;
+    transition:all 1s ease 0s;
+}
+.active.page:nth-child(3) .link h1{
+    margin-top: 10px;
+    opacity: 1;
+}
+.page:nth-child(3) .link div{
+    width:30%;
+    height: 100%;
+    float: left;
+    /* 文本换行 */
+    word-wrap: break-word;
+    padding: 20px;
+    line-height: 28px;
+}
+.active.page:nth-child(3) .link .left{
+    animation: fadeInLeft 1s both 1s;
+}
+.active.page:nth-child(3) .link .center{
+    animation: fadeInUp 1s both 1s;
+}
+.active.page:nth-child(3) .link .right{
+    animation: fadeInRight 1s both 1s;
+}
+.page:nth-child(3) .link div p:hover,.page:nth-child(3) .link div a:hover{
+    animation: shake 1s ease;
+    cursor: pointer;
+}
+.page:nth-child(4) .about{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: left;
+    padding: 30px;
+    font-size: 19px;
+}
+.active.page:nth-child(4) .about li{
+    animation: fadeInLeftBig 1s both 1s;
+}
+.page:nth-child(4) h1{
+    position: absolute;
+    top:20%;
+    right: 30%;
+}
+.page:nth-child(4) .wrap {
+    width: 800px;
+    height: 300px;
+    right: 10%;
+    top: 20%;
+    position: absolute;
+    perspective: 600px;
+}
+
+.page:nth-child(4) .sup {
+    width: 360px;
+    height: 300px;
+    margin: 100px 100px 0 50px ;
+    position: relative;
+}
+
+.page:nth-child(4) .sup img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #000;
+    transition: all 1s ease 0s;
+    background-color: #fff;
 }

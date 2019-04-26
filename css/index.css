@@ -46,7 +46,7 @@ html {
     background:-o-radial-gradient(20% 50%,pink,rgb(148, 212, 238) 70%,rgb(162, 238, 206) 98%);
 }
 .page:nth-child(3) {
-    background: url(images/liuxing.gif) 90% 100% repeat-x black;
+    background: url(../images/liuxing.gif) 90% 100% repeat-x black;
 }
 .page:nth-child(4) {
     background:-webkit-radial-gradient(80% 50%,black,rgb(15, 15, 165));
@@ -201,7 +201,7 @@ html {
     top: 0;
     font-size: 30px;
     text-align: center;
-    background:url(images/huabian.gif) center center no-repeat;
+    background:url(../images/huabian.gif) center center no-repeat;
     background-size: contain;
     border-radius: 20%;
     text-shadow: 0px 2px 5px rgb(97, 2, 250);
@@ -325,7 +325,7 @@ html {
     width: 30%;
     height:55%;
     margin: 7% 10%;
-    background: url(images/shan.jpg) center center repeat-x;
+    background: url(../images/shan.jpg) center center repeat-x;
     background-size: 100% 100%;
 }
 
